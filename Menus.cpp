@@ -3,6 +3,8 @@
 #include <iostream>
 #include <stdlib.h>
 #include <conio.h>
+#include <chrono>
+#include <thread>
 
 using namespace std;
 
@@ -29,11 +31,8 @@ void Menus::showFileMenu() {
 	cout << "\t******* File *******\n";
 	cout << "\t********************\n";
 	cout << "\n\n";
-	cout << "\n1-File.";
-	cout << "\n2-Maintenance.";
-	cout << "\n3-Reservation.";
-	cout << "\n4-Sales.";
-	cout << "\n\n9-Exit\n\n";
+	cout << "\n1-About";
+	cout << "\n\n9-Return to Main Menu.\n\n";
 	cout << "Enter an option: ";
 
 }
@@ -48,7 +47,7 @@ void Menus::showMaintenanceMenu() {
 	cout << "\n1-Movie.";
 	cout << "\n2-Rooms.";
 	cout << "\n3-Schedules.";
-	cout << "\n\n9-Exit\n\n";
+	cout << "\n\n9-Return to Main Menu.\n\n";
 	cout << "Enter an option: ";
 
 }
@@ -63,7 +62,7 @@ void Menus::showReservationMenu() {
 	cout << "\n1-Movie.";
 	cout << "\n2-Rooms.";
 	cout << "\n3-Schedules.";
-	cout << "\n\n9-Exit\n\n";
+	cout << "\n\n9-Return to Main Menu.\n\n";
 	cout << "Enter an option: ";
 
 }
@@ -77,11 +76,12 @@ void Menus::showSalesMenu() {
 	cout << "\n\n";
 	cout << "\n1-Movie.";
 	cout << "\n2-Reservation.";
-	cout << "\n\n9-Exit\n\n";
+	cout << "\n\n9-Return to Main Menu.\n\n";
 	cout << "Enter an option: ";
 }
 
-void Menus::handleMainMenu() {
+void Menus::handleMainMenu(){
+
 	int option;
 	do {
 		showMainMenu();
@@ -101,7 +101,12 @@ void Menus::handleMainMenu() {
 			handleSalesMenu();
 			break;
 		case 9:
-			cout << "Exiting...." << endl;
+			cout << "\nExiting.";
+			for (int i = 0; i < 5; i++) {
+				cout << ".";
+				this_thread::sleep_for(chrono::milliseconds(200));
+			}
+			cout << "\n";
 			break;
 		default:
 			cout << "\nInvalid option. Please try again\n\n";
@@ -110,9 +115,35 @@ void Menus::handleMainMenu() {
 		}
 
 	} while (option !=9);
+
 }
 
 void Menus::handleFileMenu() {
+
+	int option;
+	do {
+
+		showFileMenu();
+		cin >> option;
+		switch (option)
+		{
+		case 1:
+			cout << "\n\nThis project was carried \n"
+				<< "out by Johan Venegas Vindas, \n"
+				<< "for study and practical purposes at \n"
+				<< "the National University of Costa Rica.\n\n";
+			system("pause");
+			break;
+		default:
+			cout << "returning.";
+			for(int i=0;i<5;i++){
+				cout << ".";
+				this_thread::sleep_for(chrono::milliseconds(200));
+			}
+			break;
+		}
+
+	} while (option != 9);
 
 }
 

@@ -19,10 +19,5 @@ int main()
 	Menus menus;
 	menus.handleMainMenu();
 
-
-
-
-
-	system("pause");
 	return 0;
 }
