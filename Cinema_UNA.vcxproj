@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cinema_UNA.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="LoadingScreen.cpp" />
+    <ClCompile Include="Menus.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LoadingScreen.h" />
+    <ClInclude Include="Menus.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
