@@ -26,3 +26,11 @@ void LoadingScreen::show() {
 
 }
 
+void LoadingScreen::returningScreen() {
+	cout << "returning.";
+	for (int i = 0; i < 5; i++) {
+		cout << ".";
+		this_thread::sleep_for(chrono::milliseconds(200));
+	}
+}
+
