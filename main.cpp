@@ -9,10 +9,6 @@ using namespace std;
 
 int main()
 {
-	cout << endl;
-	cout << "\t**********************\n";
-	cout << "\t******* CINEMAX ******\n";
-	cout << "\t**********************\n\n";
 	LoadingScreen loading;
 	loading.show();
 

@@ -8,6 +8,10 @@ using namespace std;
 LoadingScreen::LoadingScreen(){}
 
 void LoadingScreen::show() {
+	cout << endl;
+	cout << "\t**********************\n";
+	cout << "\t******* CINEMAX ******\n";
+	cout << "\t**********************\n\n";
 
 	cout << "Loading: [";
 	for (int i = 0; i < barWidth; i++)

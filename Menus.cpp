@@ -107,16 +107,13 @@ void Menus::handleMainMenu() {
 			system("pause");
 			break;
 		}
-
 	} while (option != 9);
-
 }
 
 void Menus::handleFileMenu() {
 	LoadingScreen returning;
 	int option;
 	do {
-
 		showFileMenu();
 		cin >> option;
 		switch (option)
@@ -132,9 +129,7 @@ void Menus::handleFileMenu() {
 			returning.returningScreen();
 			break;
 		}
-
 	} while (option != 9);
-
 }
 
 void Menus::handleMaintenanceMenu() {
@@ -144,7 +139,6 @@ void Menus::handleMaintenanceMenu() {
 		showMaintenanceMenu();
 		cin >> option;
 		switch (option) {
-
 		case 1:
 			//funcion para agregar las peliculas a la caltelera.
 			break;
@@ -165,7 +159,6 @@ void Menus::handleMaintenanceMenu() {
 			system("pause");
 			break;
 		}
-
 	} while (option != 9);
 }
 
@@ -194,27 +187,21 @@ void Menus::handleReservationMenu() {
 void Menus::handleSalesMenu() {
 	int option;
 	LoadingScreen returning;
-
 	do {
 		showSalesMenu();
 		cin >> option;
 		switch (option) {
-
 		case 1:
 			//Funcion para la venta de Tickets
 			break;
 		case 9:
 			returning.returningScreen();
 			break;
-
 		default:
 			cout << "Invalid opption.Please Try Again.\n";
 			system("pause");
 			break;
 		}
-
-
-
 	} while (option != 9);
 
 }
