@@ -24,4 +24,3 @@
 
 ## This work is done in C++ <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="Logo C++" width=50>
 ## Visual Studio Code 2022 was used as the main ide <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_Icon_2022.svg" alt="Logo C++" width=50>
-# Cinema_UNA
