@@ -100,7 +100,7 @@ void Menus::handleMainMenu() {
 			handleFileMenu();
 			break;
 		case 9:
-			returning.returningScreen();
+			returning.returning();
 			break;
 		default:
 			cout << "\nInvalid option. Please try again\n\n";
@@ -126,7 +126,7 @@ void Menus::handleFileMenu() {
 			system("pause");
 			break;
 		default:
-			returning.returningScreen();
+			returning.returning();
 			break;
 		}
 	} while (option != 9);
@@ -152,7 +152,7 @@ void Menus::handleMaintenanceMenu() {
 			// Funcio para agregar el costo de las entradas.
 			break;
 		case 9:
-			returning.returningScreen();
+			returning.returning();
 			break;
 		default:
 			cout << "Invalid opption.Please Try Again.\n";
@@ -174,7 +174,7 @@ void Menus::handleReservationMenu() {
 			//funcion para reservar el ticket de la pelicula.
 			break;
 		case 9:
-			returning.returningScreen();
+			returning.returning();
 			break;
 		default:
 			cout << "Invalid opption.Please Try Again.\n";
@@ -195,7 +195,7 @@ void Menus::handleSalesMenu() {
 			//Funcion para la venta de Tickets
 			break;
 		case 9:
-			returning.returningScreen();
+			returning.returning();
 			break;
 		default:
 			cout << "Invalid opption.Please Try Again.\n";

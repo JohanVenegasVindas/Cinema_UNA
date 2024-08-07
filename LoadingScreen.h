@@ -12,7 +12,7 @@ public:
 
 	LoadingScreen();
 	void show();
-	void returningScreen();
+	void returning();
 
 };
 #endif // !Loading_Screen_H

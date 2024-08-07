@@ -30,7 +30,7 @@ void LoadingScreen::show() {
 
 }
 
-void LoadingScreen::returningScreen() {
+void LoadingScreen::returning() {
 	cout << "returning.";
 	for (int i = 0; i < 5; i++) {
 		cout << ".";
